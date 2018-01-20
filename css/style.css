@@ -125,6 +125,19 @@ body{
     -webkit-transform: scale(1.08);
     transform: scale(1.08);
 }
+.slick-prev, .slick-next{
+    height: 50px;
+    width: 50px;
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 50px;
+}
+.slick-prev {
+    left: -70px;
+}
+.slick-next {
+    right: -70px;
+}
 
 /*
     footer
