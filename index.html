@@ -8,7 +8,7 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit|Trirong" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
@@ -16,21 +16,22 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('.workshop-carousel').slick({
+                dots: true,
                 centerMode: true,
                 centerPadding: '250px',
                 slidesToShow: 1,
                 responsive: [
                     {
-                        breakpoint: 768,
+                        breakpoint: 1000,
                         settings: {
                             arrows: false,
                             centerMode: true,
-                            centerPadding: '50px',
+                            centerPadding: '150px',
                             slidesToShow: 1
                         }
                     },
                     {
-                        breakpoint: 480,
+                        breakpoint: 600,
                         settings: {
                             arrows: false,
                             centerMode: true,
@@ -104,6 +105,33 @@
     </div>
     <div id="section2">
         <div class="container">
+            <div class="col-md-12">
+                <h1><span>ที่มาของโครงการ</span></h1>
+                <p class="thai-serif">
+                    ด้วยคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ได้เปิดการเรียนการสอนในระดับปริญญาตรี หลักสูตรวิทยาศาสตรบัณทิต
+                    และได้มีการปรับปรุงหลักสูตรเดิม พร้อมทั้งเพิ่มเติมหลักสูตรใหม่ๆ ตามความต้องการของตลาดแรงงานอยู่เสมอ ซึ่งในปีพ.ศ. 2559 ทางคณะฯ
+                    ได้มีการปรับปรุงสาขาวิชาเทคโนโลยีสารสนเทศ (Information Technology) เดิมให้ทันสมัยมากยิ่งขึ้น และเพิ่มเติมอีก 2 สาขาวิชาคือ
+                    วิทยาการข้อมูลและการวิเคราะห์เชิงธุรกิจ (Data Science) และเทคโนโลยีสารสนเทศทางธุรกิจ (Business Information Technology) (หลักสูตรนานาชาติ)
+                    เพื่อตอบสนองความต้องการของตลาดแรงงาน ซึ่งในการประชาสัมพันธ์ให้นักเรียนระดับมัธยมศึกษาตอนปลายในโรงเรียนต่างๆ ทราบถึงการเปลี่ยนแปลงในครั้งนี้
+                    ทางคณะฯ จึงมีความประสงค์ที่จะจัดกิจกรรมแนะนำสาขาวิชาต่างๆ และกิจกรรมอบรมเชิงปฏิบัติการ (Workshop) ทางด้านคอมพิวเตอร์และเทคโนโลยีสารสนเทศ
+                    เพื่อประโยชน์ในการวางแผนการศึกษาและประกอบอาชีพในอนาคตของนักเรียน
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="section3">
+        <div class="container">
+            <div class="col-md-12">
+                <h1><span>วัตถุประสงค์</span></h1>
+                <ul class="thai-serif">
+                    <li>เพื่อประชาสัมพันธ์หลักสูตรของคณะฯ ตามโรงเรียนต่างๆ ให้เป็นที่รู้จัก</li>
+                    <li>เพื่อประโยชน์ในการวางแผนการศึกษาของนักเรียนระดับมัธยมศึกษาตอนปลาย</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="section4">
+        <div class="container">
             <h1><span>Workshop</span></h1>
             <div class="workshop-carousel">
                 <div class="workshop-item">
@@ -176,10 +204,10 @@
     </div>
     <footer>
         <div class="container-fluid">
-            <div class="col-md-4 footer-item">
+            <div class="col-md-4 col-sm-5 footer-item">
                 <img class="footer-icon" src="assets/footer.svg">
             </div>
-            <div class="col-md-offset-3 col-md-5 footer-item">
+            <div class="col-md-offset-3 col-sm-offset-1 col-md-5 col-sm-6 footer-item">
                 คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร
                 10520<br>
                 โทรศัพท์ +66 (0) 2723 4900 โทรสาร +66 (0) 2723 4910

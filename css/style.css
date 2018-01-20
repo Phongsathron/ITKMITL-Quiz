@@ -1,6 +1,27 @@
 body{
     font-family: 'Kanit', sans-serif;
     background: #F5F5F5;
+    font-size: 18px;
+}
+
+h1{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+
+h1 span{
+    border-bottom: 3px solid #FBC02D;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.thai-serif{
+    font-family: Arial, serif;
+}
+
+p{
+    text-indent: 60px;
 }
 
 .hero>.container{
@@ -55,20 +76,49 @@ body{
     float: none;
 }
 
+/*
+    section 2
+*/
 #section2{
-    background: #607D8B;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #546E7A;
+    color: #FFFFFF;
+}
+
+#section2 p,
+#section2 li{
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+#section2 h2{
+    margin-top: 30px;
+}
+
+/*
+    section 3
+*/
+#section3{
+    background: #FBC02D;
+    font-size: 16px;
+    padding: 20px 0px;
+}
+#section3 h1 span{
+    border-color: #000000;
+}
+
+/*
+    section 4
+*/
+
+#section4{
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-#section2 h1{
-    color: #ffffff;
-    text-align: center;
-    font-size: 40px;
-}
-
-#section2 h1 span{
-    border-bottom: 3px solid #FBC02D;
+#section4 h1{
+    color: #000000;
 }
 
 .workshop-icon{
@@ -131,6 +181,7 @@ body{
 }
 .slick-prev:before, .slick-next:before {
     font-size: 50px;
+    color: #424242;
 }
 .slick-prev {
     left: -70px;
@@ -145,6 +196,7 @@ body{
 footer{
     background: #FFFFFF;
     padding: 20px 0px;
+    font-size: 14px;
 }
 
 .footer-icon{
