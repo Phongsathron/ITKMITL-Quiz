@@ -5,11 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Roadshow - IT Ladkrabang</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.workshop-carousel').slick({
+                centerMode: true,
+                centerPadding: '200px',
+                slidesToShow: 1,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '50px',
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 350,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '0px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -49,7 +90,10 @@
                 <div class="logo">
                     <img src="assets/logo.svg">
                 </div>
-                
+                <div class="event-intro">
+                    โครงการอบรมความรู้ด้านคอมพิวเตอร์ 4 เวิร์คช้อป
+                    <br> เพื่อสร้างโอกาสทางการศึกษาให้กับนักเรียน ม.ปลาย
+                </div>
                 <div class="join-button">
                     <a class="btn btn-default" href="#" role="button">
                         <span class="glyphicon glyphicon-chevron-right"></span> ลงทะเบียนเข้าร่วมงาน
@@ -62,13 +106,7 @@
         </div>
     </div>
     <div id="section2">
-        <div class="container">
-            <div class="col-md-12">
-                <div class="event-intro">
-                    โครงการอบรมความรู้ด้านคอมพิวเตอร์ 4 เวิร์คช้อป
-                    <br> เพื่อสร้างโอกาสทางการศึกษาให้กับนักเรียน ม.ปลาย
-                </div>
-            </div>
+        <!-- <div class="container">
             <div class="col-md-3">
                 <div class="workshop-icon">
                     <img src="assets/ar.svg">
@@ -101,12 +139,86 @@
                     BIOMEDICAL DATA SCIENCE
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="section3">
+        </div> -->
         <div class="container">
-
+            <h1>Workshop</h1>
+            <div class="workshop-carousel">
+                <div class="workshop-item">
+                <div class="card">
+                    <div class="workshop-icon">
+                        <img src="assets/ar.svg">
+                    </div>
+                    <div class="workshop-name">
+                        AR ANIMATE
+                    </div>
+                    <div class="workshop-detail">
+                        <p>
+                        เรียนรู้และเข้าใจเทคโนโลยี AR หรือ Augmented Reality ได้เรียนรู้วิธีการใช้งานตัวละครแบบ 3 มิติ (3D Model) รวมทั้งฝึกทักษะการเขียนโปรแกรมในการควบคุมการเคลื่อนไหวของตัวละครผ่านเครื่องมืออย่างง่าย
+                        และสามารถนำไปพัฒนาต่อยอดได้ด้วยตนเอง
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="workshop-item">
+                <div class="card">
+                    <div class="workshop-icon">
+                        <img src="assets/nxt.svg">
+                    </div>
+                    <div class="workshop-name">
+                        SMART LEGO
+                    </div>
+                    <div class="workshop-detail">
+                        <p>
+                        รู้จักกับตัวต่อเลโก้ (LEGO) รุ่น Mindstorms NXT ประกอบด้วยเอ็มพียู (MPU) เซ็นเซอร์แสง (Light Sensor) เซ็นเซอร์เสียง (Sound
+                        Sensor) เซ็นเซอร์สัมผัส (Touch Sensor) เซ็นเซอร์อัลตราโซนิค (Ultrasonic Sensor) และมอเตอร์ (Motor) สร้างเป็นหุ่นยนต์ในรูปแบบต่างๆ
+                        และทดลองเขียนโปรแกรมควบคุมหุ่นด้วยภาษาจาวา
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="workshop-item">
+                <div class="card">
+                    <div class="workshop-icon">
+                        <img src="assets/iot.svg">
+                    </div>
+                    <div class="workshop-name">
+                        เชื่อมต่อทุกสรรพสิ่งด้วย IOT
+                    </div>
+                    <div class="workshop-detail">
+                        <p>
+                        เรียนรู้การใช้งานอุปกรณ์ Raspberry PI เพื่อใช้รับส่งข้อมูลกับเครือข่ายอินเทอร์เน็ต โดยจะมีทั้งการเขียนโปรแกรมที่ตัว Raspberry
+                        PI และการปรับแต่งการทำงานของการแสดงผลให้สามารถเข้าถึงได้ทั้งทางคอมพิวเตอร์ และโทรศัพท์มือถือ
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="workshop-item">
+                <div class="card">
+                    <div class="workshop-icon">
+                        <img src="assets/medical.svg">
+                    </div>
+                    <div class="workshop-name">
+                        BIOMEDICAL DATA SCIENCE
+                    </div>
+                    <div class="workshop-detail">
+                        <p>
+                        ทดลองเป็นคุณหมอทำการวินิจฉัยโรคจากข้อมูลประวัติส่วนตัวของผู้ป่วย โดยใช้ซอร์ฟแวร์ RapidMiner มาช่วยสร้างต้นไม้ตัดสินใจ (Decision
+                        Tree) เพื่อทำการวินิจฉัยผู้ป่วยนั้น เป็นโรคหัวใจหรือไม่
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
+    <footer>
+        <div class="container">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+                
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
