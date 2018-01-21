@@ -34,6 +34,9 @@ p{
 .hero>.container{
     padding-top: 30px;
     padding-bottom: 60px;
+    background: url(../assets/airplane.svg) no-repeat;
+    background-position: center;
+    background-size: 80%;
 }
 
 .hero .join-button{
