@@ -224,6 +224,7 @@ footer{
 
 .footer-icon{
     margin-top: 3px;
+    max-width: 450px;
 }
 .footer-item{
     padding: 10px;
