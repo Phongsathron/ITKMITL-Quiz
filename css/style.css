@@ -24,6 +24,13 @@ p{
     text-indent: 60px;
 }
 
+
+/*
+    section
+*/
+#section1{
+    padding-top: 80px;
+}
 .hero>.container{
     padding: 30px 0px;
     padding-bottom: 60px;
@@ -82,8 +89,7 @@ p{
 #section2{
     padding-top: 30px;
     padding-bottom: 30px;
-    background: #546E7A;
-    color: #FFFFFF;
+    /* background: #546E7A; */
 }
 
 #section2 p,
@@ -100,12 +106,9 @@ p{
     section 3
 */
 #section3{
-    background: #FBC02D;
+    /* background: #FBC02D; */
     font-size: 16px;
-    padding: 20px 0px;
-}
-#section3 h1 span{
-    border-color: #000000;
+    padding: 50px 0px;
 }
 
 /*
@@ -152,9 +155,27 @@ p{
 
 .card{
     background: #FFFFFF;
-    padding: 30px 20px;
+    padding: 30px;
     border-radius: 3px;
     margin: 0px 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.29);
+}
+
+.objective-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.objective-list li{
+    padding: 10px 0px;
+}
+.objective-list li::before {
+  content: "• ";
+  position: relative;
+  top: 5px;
+  line-height: 0;
+  color: #FDD835;
+  font-size: 40px;
 }
 
 .workshop-carousel{
@@ -212,6 +233,11 @@ footer{
 .navbar{
     border-radius: 0px;
     margin-bottom: 0px;
+    transition: background-color 200ms linear;
+}
+
+.navbar.scrolled{
+    background: #FFCA28;
 }
 
 .navbar .container-fluid{
@@ -239,13 +265,31 @@ footer{
     background: #000;
 }
 
+.mountain{
+    text-align: center;
+    max-height: 300px;
+}
+
+/*
+    Coming Soon
+*/
+.coming-soon{
+    display: inline-block;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
 .nav>li>a{
-    padding: 30px 15px;
+    padding: 25px 15px;
     font-size: 18px;
 }
 @media (max-width: 768px){
     .navbar{
         background: #FFCA28;
+    }
+    .navbar .container-fluid{
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .nav>li>a{
         border-bottom: 1px solid #000000;
@@ -258,11 +302,29 @@ footer{
         font-size: 13px;
         padding: 20px 10px;
     }
+    .card{
+        margin: 0px;
+    }
+    .event-intro{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .mountain{
+        text-align: center;
+        max-height: 250px;
+    }
+    .col-md-12,
+    .col-md-6{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 @media (min-width: 768px){
     .navbar-nav>li>a {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 }
