@@ -71,7 +71,6 @@ p{
     margin-bottom: 50px;
     width: 40%;
     position: relative;
-    right: 15px;
 }
 
 .event-intro{
@@ -150,7 +149,6 @@ p{
 .workshop-detail{
     font-size: 16px;
     padding: 20px 20px;
-    margin-bottom: 30px;
 }
 
 .card{
@@ -319,6 +317,9 @@ footer{
     .col-md-6{
         padding-left: 0px;
         padding-right: 0px;
+    }
+    p{
+        text-indent: 30px;
     }
 }
 
